@@ -1,0 +1,164 @@
+
+:root {
+    --title-color : #322153;
+    --primary-color : #34cb79;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing:antialiased;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+    color:var(--title-color);
+}
+#page-home{
+    height: 100vh;
+    background: url('../assets/home-background.svg') no-repeat;
+    background-position-x: 35vw;
+    background-position-y: 100px;
+}
+#page-home .content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#page-home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+#page-home header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: bold;
+    
+}
+
+#page-home header a span{
+    background: url('../assets/log-in.svg');
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+#page-home main{
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    background: var(--primary-color);
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: 400ms;
+    color: white;
+}
+
+#page-home main a:hover{
+    background-color: #2fb86e;
+}
+#page-home main a span{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 72px;
+    height: 72px;
+    background-color:  rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{
+   content: "";
+   background-image: url('../assets/search.svg');
+   width: 20px;
+   height: 20px; 
+}
+
+#page-home main a strong{
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width : 1105px){
+    #page-home{
+        background-position-x: 80vw; 
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main{
+        align-items: center;
+    }
+}
+
+@media (max-width : 414px){
+   
+    #page-home main h1{
+      font-size: 30px;
+      margin-top: 0px;
+    }
+    #page-home main p{
+        font-size: 24px;
+        line-height: 38px;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width : 320px){
+   
+    #page-home main h1{
+      font-size: 25px;
+      margin-top: 0px;
+    }
+    #page-home main p{
+        font-size: 19px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+}
+
