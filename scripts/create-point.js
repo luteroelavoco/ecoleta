@@ -2,7 +2,7 @@
 
 function PopulateUFs(){
     const ufSelect = document.querySelector("select[name=uf]");
-    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
         .then((res) => res.json())
         .then((states) => {
             for(state of states){
