@@ -38,6 +38,12 @@
         border-radius: 8px 8px 0 0 ;
         object-fit: cover;
     }
+    form .field-group{
+        flex-direction: column;
+    }
+    form .field-group .field + .field{
+        margin-left: 0px;
+    }
 }
 
 
