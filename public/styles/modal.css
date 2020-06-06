@@ -78,3 +78,12 @@
 #modal form button:focus{
     outline: 0;
 }
+
+#modal.point .content{
+    text-align: center;
+}
+
+#modal.point h1{
+   color: white;
+   margin-top: 32px;
+}

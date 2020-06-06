@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.1"
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
   }
 }
